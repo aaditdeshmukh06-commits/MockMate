@@ -53,6 +53,14 @@ section[data-testid="stSidebar"] {
     animation: slideIn 0.5s ease-in-out;
 }
 
+/* Force readable dark text inside the sidebar, regardless of whether
+   Streamlit's global theme (Settings > Theme) is set to Light or Dark.
+   Without this, dark-theme mode leaves white text on our light
+   sidebar background, making it unreadable. */
+section[data-testid="stSidebar"] * {
+    color: #111827 !important;
+}
+
 section[data-testid="stSidebar"] .stRadio label {
     transition: all 0.2s ease-in-out;
     border-radius: 8px;
