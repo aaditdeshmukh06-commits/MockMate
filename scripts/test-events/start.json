@@ -1,0 +1,10 @@
+{
+  "httpMethod": "POST",
+  "body": "{\"userId\":\"test-user-1\",\"role\":\"Software Engineer\",\"difficulty\":\"medium\",\"language\":\"English\",\"jdText\":\"\",\"resumeText\":\"\"}",
+  "requestContext": {
+    "authorizer": {
+      "jwt": {"claims": {"sub": "test-user-1"}},
+      "claims": {"sub": "test-user-1"}
+    }
+  }
+}

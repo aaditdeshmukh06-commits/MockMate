@@ -1,0 +1,18 @@
+
+D:\dheeraj\MockMate\frontend\src\lib\store.tsx
+  188:3  error    Error: Cannot access refs during render
+
+React refs are values that are not needed for rendering. Refs should only be accessed outside of render, such as in event handlers or effects. Accessing a ref value (the `current` property) during render can cause your component not to update as expected (https://react.dev/reference/react/useRef).
+
+D:\dheeraj\MockMate\frontend\src\lib\store.tsx:188:3
+  186 |   // Refs to access latest state without adding to useCallback deps
+  187 |   const stateRef = useRef(state);
+> 188 |   stateRef.current = state;
+      |   ^^^^^^^^^^^^^^^^ Cannot update ref during render
+  189 |
+  190 |   // Load user from session/storage on mount
+  191 |   useEffect(() => {  react-hooks/refs
+  357:6  warning  React Hook useCallback has an unnecessary dependency: 'dispatch'. Either exclude it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react-hooks/exhaustive-deps
+
+✖ 2 problems (1 error, 1 warning)
+

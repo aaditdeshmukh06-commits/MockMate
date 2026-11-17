@@ -1,0 +1,10 @@
+{
+  "httpMethod": "POST",
+  "body": "{\"sessionId\":\"REPLACE_SESSION_ID\",\"answer\":\"I have experience with Python and JavaScript. I built a scalable web application using React and Django with PostgreSQL.\",\"questionNumber\":1}",
+  "requestContext": {
+    "authorizer": {
+      "jwt": {"claims": {"sub": "test-user-1"}},
+      "claims": {"sub": "test-user-1"}
+    }
+  }
+}

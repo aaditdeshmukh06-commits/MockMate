@@ -1,0 +1,10 @@
+{
+  "httpMethod": "GET",
+  "queryStringParameters": {"userId": "test-user-1"},
+  "requestContext": {
+    "authorizer": {
+      "jwt": {"claims": {"sub": "test-user-1"}},
+      "claims": {"sub": "test-user-1"}
+    }
+  }
+}

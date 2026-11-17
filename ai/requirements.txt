@@ -1,0 +1,10 @@
+# MockMate Lambda Dependencies
+# DO NOT include boto3 or botocore - they are provided by the Lambda runtime
+# This file is used by the build script to install dependencies into the deployment package
+
+# Groq LLM client for answer evaluation and report generation
+groq>=0.5.0
+
+# Python-dotenv for local development (loading .env files)
+# Not needed in Lambda production (uses environment variables directly)
+python-dotenv>=1.0.0
